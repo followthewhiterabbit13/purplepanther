@@ -37,7 +37,11 @@ const ContactFormContainer = styled.div`
 const Heading = styled.h2``
 
 const FormContainer = styled.form.attrs({
- 
+  id: 'ContactForm',
+  method: 'POST',
+  name: 'ContactForm',
+  'data-netlify': 'true',
+  action: '/success',
 })`
   width: 80%;
   max-width: 580px;
@@ -46,10 +50,10 @@ const FormContainer = styled.form.attrs({
   align-items: left;
 `
 
-const ContactForm = ({ netlifyForm, dark, recaptcha, hideTitle }) => (
+const ContactForm = ({ dark, recaptcha, hideTitle }) => (
   <ContactFormContainer>
     {!hideTitle && <Heading>Contact us</Heading>}
-    <FormContainer netlifyForm={netlifyForm} name="Contact" method="post">
+    <FormContainer  >
       <Input
         type="text"
         name="name"
