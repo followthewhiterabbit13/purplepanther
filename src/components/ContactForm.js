@@ -77,7 +77,7 @@ const ContactForm = ({ formName, netlifyForm, dark, recaptcha, hideTitle }) => (
         value="newsletter"
         label="Subscribe to newsletter ?"
       /> */}
-      {/* {recaptcha ? <div data-netlify-recaptcha /> : null} */}
+      {recaptcha ? <div data-netlify-recaptcha /> : null}
       <input type="hidden" name="page" value={formName} />
       <input type="hidden" name="form-name" value="ContactForm2" />
       <Button type="submit">Send</Button>
