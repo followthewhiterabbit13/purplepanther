@@ -9,6 +9,18 @@ export default {
 
     return [
       {
+        path: '/',
+      },
+      {
+        path: '/about',
+      },
+      {
+        path: '/training',
+      },
+      {
+        path: '/startups',
+      },
+      {
         path: '/blog',
         getData: () => ({
           posts,
