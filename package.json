@@ -5,18 +5,21 @@
     "start": "react-static start",
     "stage": "react-static build --staging",
     "build": "react-static build",
-    "analyze": "react-static build --analyze",
-    "serve": "serve dist -p 3000"
+    "bundle": "react-static bundle",
+    "export": "react-static export",
+    "serve": "serve dist -p 3000 -s"
   },
   "dependencies": {
     "@reach/router": "^1.2.1",
     "axios": "^0.18.0",
+    "lodash": "^4.17.15",
     "react": "^16.8.2",
     "react-dom": "^16.8.2",
     "react-static": "^7.0.0",
     "react-static-plugin-reach-router": "^7.0.0",
     "react-static-plugin-sitemap": "^7.0.0",
-    "react-static-plugin-source-filesystem": "^7.0.0"
+    "react-static-plugin-source-filesystem": "^7.0.0",
+    "styled-components": "^4.3.2"
   },
   "devDependencies": {
     "babel-eslint": "9.x",
