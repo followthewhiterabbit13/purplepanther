@@ -46,10 +46,10 @@ const FormContainer = styled.form.attrs({
   align-items: left;
 `
 
-const ContactForm = ({ formName, netlifyForm, dark, recaptcha, hideTitle }) => (
+const ContactForm = ({ netlifyForm, dark, recaptcha, hideTitle }) => (
   <ContactFormContainer>
     {!hideTitle && <Heading>Contact us</Heading>}
-    <FormContainer netlifyForm={netlifyForm}>
+    <FormContainer netlifyForm={netlifyForm} name="Contact" method="post">
       <Input
         type="text"
         name="name"
@@ -72,14 +72,10 @@ const ContactForm = ({ formName, netlifyForm, dark, recaptcha, hideTitle }) => (
         required
       />
       <TextInput name="message" placeholder="Message" dark={dark} required />
-      {/* <Checkbox
-        name="subscribe"
-        value="newsletter"
-        label="Subscribe to newsletter ?"
-      /> */}
+     
       {recaptcha ? <div data-netlify-recaptcha /> : null}
-      <input type="hidden" name="page" value={formName} />
-      <input type="hidden" name="form-name" value="ContactForm2" />
+      <input type="hidden" name="page" value="ContactForm" />
+      <input type="hidden" name="form-name" value="ContactForm" />
       <Button type="submit">Send</Button>
     </FormContainer>
   </ContactFormContainer>
