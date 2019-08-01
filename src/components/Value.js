@@ -13,8 +13,9 @@ const Container = styled.div`
 
 const Title = styled.h3`
   font-size: 0.8rem;
+  font-weight: bold;
   font-family: ${props => props.theme.fonts.mono};
-  color: ${props => props.theme.colors.brand};
+  color: purple;
   margin: 0 0 10px;
   text-transform: uppercase;
 `

@@ -13,7 +13,12 @@ import CareersInterstitial from '../components/CareersInterstitial'
 import Partner from '../components/Partner'
 import ContactForm from '../components/ContactForm'
 
+import hero from '../img/davide-cantelli-H3giJcTw__w-unsplash.jpg'
+
 const CopyContainer = styled.div`
+display: inline-block;
+text-align: right;
+p{color: white; align-self: right;}
   max-width: 600px;
 
   @media (max-width: 768px) {
@@ -21,7 +26,7 @@ const CopyContainer = styled.div`
     padding: 0 20px;
   }
 `
-const SectionTitle = styled.h2`
+const SectionTitle = styled.h3`
   margin: 60px 0;
 `
 
@@ -41,7 +46,11 @@ const DescriptionGrid = styled.div`
     }
   }
 `
-const Description = styled.div``
+const Description = styled.div`
+  border: 1px solid;
+  border-radius: 10px;
+  padding: 20px;
+`
 
 const Partners = styled.div`
   @media (min-width: 768px) {
@@ -58,24 +67,33 @@ const ContactInterstitial = styled.div`
   padding: 80px;
   background-color: ${props => props.theme.colors.lighterGrey};
 `
+const HeroBack = styled.div`
+  background-image: url("${hero}");
+  background-size: cover;
+  opacity: 0.9;
+`
+
+const CopyWrapper = styled(PageWrapper)`
+  text-align: right;
+`
 
 const Training = () => (
   <>
-  <PageWrapper>
-    <Head
+ 
+    {/* <Head
       title="About Highline BETA"
       description={`Our team has run accelerators, launched and invested in companies, mentored founders, and worked inside enterprises. We have all \
 developed the same fundamental belief: the future of corporate \
 innovation is new venture development. Enterprises and startups that \
 work together to co-create new ventures will find the future growth \
 trajectories to win.`}
-    />
-
+    /> */}
+<HeroBack>
     <HeroBanner title="Training">
 
     </HeroBanner>
 
-    
+    <CopyWrapper>
       <CopyContainer>
         <p>
         We offer customized training programs and individual master classes oriented to straightening company’s brand in general and to improve management in specific areas.
@@ -85,7 +103,10 @@ trajectories to win.`}
         <p>
         Experience shows that our training creates instant results and long-lasting positive changes. Our training is delivered in-person where available or in a webinar format.
         </p>
-      </CopyContainer>
+      </CopyContainer> 
+      </CopyWrapper>
+      </HeroBack>
+      <PageWrapper>
       <SectionTitle>Training topics:</SectionTitle>
       <DescriptionGrid>
         <Description>

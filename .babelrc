@@ -1,3 +1,4 @@
 {
+  "compact": false,
   "presets": ["react-static/babel-preset.js"]
 }

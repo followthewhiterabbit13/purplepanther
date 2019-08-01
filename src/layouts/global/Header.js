@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { Link } from '@reach/router'
 
+import logo from '../../img/SmallLogo copywhite copy.png'
 // import Logo from '../../components/Logo'
 import PageWrapper from '../../components/PageWrapper'
 import Nav from '../../components/Nav'
@@ -26,11 +27,21 @@ const Inner = styled(PageWrapper)`
   }
 `
 
+const LogoStyle = styled.div`
+  padding: 20px 0;
+  width: 300px;
+  img{
+    width: 100%;
+  }
+`
+
 const Header = ({ open, toggleVisibility }) => (
   <Container>
     <Inner>
       <Link to="/">
-        {/* <Logo /> */}
+        <LogoStyle>
+          <img src={logo} alt="ppm" />
+        </LogoStyle>
       </Link>
 
       <Nav open={open} toggleVisibility={toggleVisibility} />

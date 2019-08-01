@@ -58,7 +58,7 @@ const Wrapper = styled.div`
   }
 `
 
-const Title = styled.h2`
+const Title = styled.h3`
   margin: 0 0 10px;
 `
 

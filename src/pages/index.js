@@ -11,9 +11,11 @@ import PageWrapper from '../components/PageWrapper'
 import ContactForm from '../components/ContactForm'
 import Portfolio from '../components/Portfolio'
 import CareersInterstitial from '../components/CareersInterstitial'
+import hero from '../img/philippe-toupet-R261qkc-nDE-unsplash.jpg'
 
 
 const Hero = styled.div`
+  
   display: grid;
 
   @media (min-width: 768px) {
@@ -95,17 +97,6 @@ const Service = ({ title, leadin, children, link, topMargin = false }) => (
   </ServiceContainer>
 )
 
-const Corporate = styled(Service)`
-  grid-area: corporate;
-`
-
-const CoCreation = styled(Service)`
-  grid-area: cocreation;
-`
-
-const Fund = styled(Service)`
-  grid-area: fund;
-`
 
 const ImageContainer = styled.div`
   grid-area: img;
@@ -120,7 +111,14 @@ const ContactInterstitial = styled.div`
   background-color: ${props => props.theme.colors.lighterGrey};
 `
 
+const HeroBack = styled.div`
+  background-image: url("${hero}");
+  background-size: cover;
+  opacity: 0.9;
+`
+
 const CopyContainer = styled.div`
+  p{color: white}
   width: 600px;
 
   @media (max-width: 768px) {
@@ -134,13 +132,17 @@ const Home = () => (
   
  
 
-    <Head />
-    <PageWrapper>
+    {/* <Head /> */}
+   
+   
+       <HeroBack>
+          <PageWrapper>
       <Hero>
         <ImageContainer>
           {/* <img src={heroImg} alt="Highline Beta" /> */}
         </ImageContainer>
-        <h1>Purple Panther Marketing</h1>
+        <h1>Purple Panther Marketing</h1> 
+       
         <h3 className="description">
          
         </h3>
@@ -152,6 +154,10 @@ const Home = () => (
         We are a network of over 70 creative marketing and technology firms as well as hand-picked talented artists and scientists from 34 countries around the world.
         </p>
       </CopyContainer>
+      </Hero>
+      </PageWrapper>
+      </HeroBack>
+      <PageWrapper>
        {/*  <CoCreation
           leadin=""
          
@@ -178,7 +184,7 @@ const Home = () => (
           We invest at the pre-seed and seed stages in co-creations and in
           startups in our accelerator programs. *
          </Fund>  */}
-      </Hero>
+     
     </PageWrapper>
     {/* <NewsSection posts={posts} /> */}
     <Portfolio title="Industry Expertise" companies={[{description:"Transportation and Logistics"}, {description:"Technology"},{description:"Education"}, {description:"Health and Wellness"},{description:"Real estate"}, {description:"Food"},{description:"Finance and Insurance"}, {description:"Construction and Renovation"}]}>

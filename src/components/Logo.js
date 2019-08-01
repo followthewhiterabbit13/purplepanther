@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-// import logo from '../img/logos/hlb-logo.svg'
+// import logo from '../img/SmallLogo copywhite copy.png'
 // import logoWhite from '../img/logos/hlb-logo-wh.svg'
 
 const Logo = styled.img.attrs(props => ({

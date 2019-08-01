@@ -4,7 +4,7 @@ import styled from 'styled-components'
 import PageWrapper from '../components/PageWrapper'
 
 const Container = styled.div`
-  background-color: ${props => props.theme.colors.white};
+  // background-color: ${props => props.theme.colors.white};
   padding: 40px 0;
   margin-bottom: 0;
 
@@ -42,7 +42,8 @@ const Title = styled.h1`
   }
 `
 const Desc = styled.h3`
-  color: ${props => props.theme.colors.darkerGrey};
+  // color: ${props => props.theme.colors.darkerGrey};
+  align-self: right;
 `
 
 const ImageContainer = styled.div`
@@ -63,12 +64,13 @@ const HeroBanner = ({ title, children, img = '' }) => (
     <Wrapper>
       <Title>{title}</Title>
       <Inner img={img}>
-        <Desc img={img}>{children}</Desc>
+       
         {img && (
           <ImageContainer>
             <img src={img} alt={title} />
           </ImageContainer>
-        )}
+          
+        )} <Desc img={img}>{children}</Desc>
       </Inner>
     </Wrapper>
   </Container>

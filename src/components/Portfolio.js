@@ -10,6 +10,7 @@ const Container = styled.div`
 `
 
 const CompanyWrapper = styled.div`
+  text-align: center;
   display: grid;
   grid-gap: 30px;
 

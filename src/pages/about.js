@@ -12,8 +12,10 @@ import Partner from '../components/Partner'
 import ContactForm from '../components/ContactForm'
 import HowItWorks from '../components/HowItWorks'
 import Why from '../components/Why'
+import hero from '../img/sergey-pesterev--YOvMSD7LbQ-unsplash.jpg'
 
 const CopyContainer = styled.div`
+  p{ color: white; background: transparent; opacity: 1;}
   width: 600px;
 
   @media (max-width: 768px) {
@@ -37,18 +39,23 @@ const ContactInterstitial = styled.div`
   padding: 80px;
   background-color: ${props => props.theme.colors.lighterGrey};
 `
+const HeroBack = styled.div`
+  background-image: url("${hero}");
+  background-size: cover;
+  opacity: 0.9;
+`
 
 const About = () => (
   <>
-    <Head
+    {/* <Head
       title="About Highline BETA"
       description={`Our team has run accelerators, launched and invested in companies, mentored founders, and worked inside enterprises. We have all \
 developed the same fundamental belief: the future of corporate \
 innovation is new venture development. Enterprises and startups that \
 work together to co-create new ventures will find the future growth \
 trajectories to win.`}
-    />
-
+    /> */}
+<HeroBack>
     <HeroBanner title="About Us">
     We are visionaries and innovators 
     
@@ -64,7 +71,9 @@ trajectories to win.`}
         We use data to help us identify opportunities, technology to help us take advantage of them, and emotion to make the resulting experiences magical.
         </p>
       </CopyContainer>
-
+     </PageWrapper>
+</HeroBack>
+<PageWrapper>
       <Title></Title>
       {/* <Partners>
         {partners
