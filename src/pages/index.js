@@ -11,7 +11,9 @@ import PageWrapper from '../components/PageWrapper'
 import ContactForm from '../components/ContactForm'
 import Portfolio from '../components/Portfolio'
 import CareersInterstitial from '../components/CareersInterstitial'
+
 import hero from '../../public/img/philippe-toupet-R261qkc-nDE-unsplash.jpg'
+
 
 
 const Hero = styled.div`

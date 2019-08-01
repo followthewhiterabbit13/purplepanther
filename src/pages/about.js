@@ -12,7 +12,9 @@ import Partner from '../components/Partner'
 import ContactForm from '../components/ContactForm'
 import HowItWorks from '../components/HowItWorks'
 import Why from '../components/Why'
+
 import hero from '../../public/img/sergey-pesterev--YOvMSD7LbQ-unsplash.jpg'
+
 
 const CopyContainer = styled.div`
   p{ color: white; background: transparent; opacity: 1;}
