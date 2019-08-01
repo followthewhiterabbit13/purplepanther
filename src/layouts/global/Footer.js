@@ -8,11 +8,11 @@ import PageWrapper from '../../components/PageWrapper'
 import SubscribeForm from '../../components/SubscribeForm'
 
 const Container = styled.div`
-  background-color: ${props => props.theme.colors.darkerGrey};
+  background-color: #6E2B6D;
   color: #fff;
   padding: 70px 0;
   margin-top: auto;
-  border-top: 5px solid ${props => props.theme.colors.brand};
+  border-top: 5px solid ${props => props.theme.colors.primaryYellow};
 `
 
 const Wrapper = styled(PageWrapper)`

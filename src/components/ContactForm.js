@@ -50,32 +50,33 @@ const FormContainer = styled.form.attrs({
   align-items: left;
 `
 
-const ContactForm = ({ dark, recaptcha, hideTitle }) => (
+const ContactForm = ({ inverse, recaptcha, hideTitle }) => (
   <ContactFormContainer>
+    {console.log(inverse)}
     {!hideTitle && <Heading>Contact us</Heading>}
     <FormContainer  >
       <Input
         type="text"
         name="name"
         placeholder="Your name"
-        dark={dark}
+        inverse={inverse}
         required
       />
       <Input
         type="email"
         name="email"
         placeholder="Your email"
-        dark={dark}
+        inverse={inverse}
         required
       />
       <Input
         type="text"
         name="company"
         placeholder="Company"
-        dark={dark}
+        inverse={inverse}
         required
       />
-      <TextInput name="message" placeholder="Message" dark={dark} required />
+      <TextInput name="message" placeholder="Message" inverse={inverse} required />
      
       {recaptcha ? <div data-netlify-recaptcha /> : null}
       <input type="hidden" name="page" value="ContactForm" />
