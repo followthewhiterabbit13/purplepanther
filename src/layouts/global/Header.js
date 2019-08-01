@@ -2,7 +2,10 @@ import React from 'react'
 import styled from 'styled-components'
 import { Link } from '@reach/router'
 
-import logo from '../../img/SmallLogo copywhite copy.png'
+
+import logo from '../../../public/img/SmallLogo copywhite copy.png'
+
+
 // import Logo from '../../components/Logo'
 import PageWrapper from '../../components/PageWrapper'
 import Nav from '../../components/Nav'

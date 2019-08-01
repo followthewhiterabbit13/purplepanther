@@ -13,7 +13,8 @@ import CareersInterstitial from '../components/CareersInterstitial'
 import Partner from '../components/Partner'
 import ContactForm from '../components/ContactForm'
 
-import hero from '../img/davide-cantelli-H3giJcTw__w-unsplash.jpg'
+
+import hero from '../../public/img/davide-cantelli-H3giJcTw__w-unsplash.jpg'
 
 const CopyContainer = styled.div`
 display: inline-block;

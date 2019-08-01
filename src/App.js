@@ -24,12 +24,13 @@ const App = () => {
         <Link to="/blog">Blog</Link>
 
       </nav> */}
-      <React.Suspense fallback={<em>Loading...</em>}>
+      {/* <React.Suspense fallback={<em>Loading...</em>}>
       <Router>
-          <Routes path="*" />
+          
           </Router>
       
-       </React.Suspense>
+       </React.Suspense> */}
+       <Routes/>
         </Layout>
       {/* <div className="content">
         <React.Suspense fallback={<em>Loading...</em>}>
